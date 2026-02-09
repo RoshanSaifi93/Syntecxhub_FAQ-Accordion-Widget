@@ -20,6 +20,8 @@ body{
 .faq{
     border-bottom: 1px solid #eee;
     padding: 10px 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 .question{
     font-weight: bold;
@@ -27,23 +29,41 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 14px 16px;
 }
 .icon{
-    font-size: 18px;
-    transition: transform 0.2s ease;
+    font-size: 20px;
+    font-weight: bold;
 }
 .answer{
     color: #555;
+    padding: 0 16px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease;
+    transition: max-height 0.3s ease;
 }
 .faq.active .answer{
     max-height: 100px;
-    margin-top: 8px;
+    padding: 0 16px 14px;
 }
-.faq.active .icon{
-    transform: rotate(45deg);
+.faq:nth-child(2) {
+  background-color: #f9f9ff;
+}
+
+.faq:nth-child(3) {
+  background-color: #f1faff;
+}
+
+.faq:nth-child(4) {
+  background-color: #f9fff4;
+}
+
+.faq:nth-child(5) {
+  background-color: #fff6f6;
+}
+
+.faq:nth-child(6) {
+  background-color: #f4f4f4;
 }
 
 @media(max-width: 600px){
